@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeByMike7 | Global Digital Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; transition: all 0.3s ease; }
+        .demo-card { @apply bg-white rounded-3xl p-4 mb-3 border border-slate-200 flex items-center gap-4 transition-all active:scale-95 hover:shadow-lg; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="p-4 max-w-md mx-auto flex justify-between items-center sticky top-0 bg-slate-50/80 backdrop-blur-md z-50">
+        <h1 class="font-black text-xl tracking-tighter">CODEBY<span class="text-blue-600">MIKE7</span></h1>
+        <div class="flex gap-2">
+            <button onclick="setLanguage('es')" class="text-[10px] font-bold px-2 py-1 rounded-full border border-slate-300 hover:bg-white">ES</button>
+            <button onclick="setLanguage('en')" class="text-[10px] font-bold px-2 py-1 rounded-full border border-slate-300 hover:bg-white">EN</button>
+        </div>
+    </nav>
+
+    <header class="p-10 text-center max-w-md mx-auto">
+        <h2 id="main-title" class="text-4xl font-extrabold leading-tight mb-4"></h2>
+        <p id="main-subtitle" class="text-slate-500 text-sm"></p>
+    </header>
+
+    <main id="app-container" class="p-4 max-w-md mx-auto">
+        </main>
+
+    <footer class="p-10 text-center">
+        <button id="cta-button" onclick="contact()" class="w-full max-w-xs bg-blue-600 text-white font-bold py-4 rounded-2xl shadow-lg shadow-blue-200"></button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
