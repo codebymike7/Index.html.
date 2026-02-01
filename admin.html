@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | CodeByMike7</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-6">
+
+    <div class="max-w-md mx-auto">
+        <header class="mb-8 flex justify-between items-center">
+            <h1 class="text-2xl font-black tracking-tighter">MIKE<span class="text-blue-500">ADMIN</span></h1>
+            <a href="index.html" class="text-xs bg-slate-800 px-3 py-1 rounded-full border border-slate-700">Ver Web</a>
+        </header>
+
+        <form id="admin-form" class="bg-slate-800 p-6 rounded-3xl border border-slate-700 shadow-2xl space-y-4">
+            <h2 class="text-lg font-bold mb-4 text-blue-400 italic">Añadir Nuevo Servicio</h2>
+            
+            <input type="text" id="name_es" placeholder="Nombre (Español)" class="w-full bg-slate-900 border-none p-4 rounded-xl" required>
+            <input type="text" id="name_en" placeholder="Name (English)" class="w-full bg-slate-900 border-none p-4 rounded-xl" required>
+            
+            <div class="grid grid-cols-2 gap-3">
+                <input type="text" id="icon" placeholder="Icono (ej: fa-car)" class="bg-slate-900 border-none p-4 rounded-xl text-sm" required>
+                <input type="text" id="color" placeholder="Color (ej: bg-red-500)" class="bg-slate-900 border-none p-4 rounded-xl text-sm" required>
+            </div>
+            
+            <input type="text" id="link" placeholder="Link (ej: taller.html)" class="w-full bg-slate-900 border-none p-4 rounded-xl" required>
+
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-2xl shadow-lg shadow-blue-900/20 transition-all active:scale-95">
+                PUBLICAR EN LA NUBE 🚀
+            </button>
+        </form>
+
+        <div id="status-msg" class="mt-6 text-center font-bold text-sm"></div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
